@@ -1,6 +1,6 @@
 Name:
   ID: "?"
-  Data: Primitive/Box
+  Data: Primitive/Cone
 Active:
   ID: "?"
   Data: true
@@ -163,11 +163,11 @@ Children:
     Children:
       - Name:
           ID: "?"
-          Data: Box
+          Data: Cone
         Active:
           ID: "?"
           Data: true
-        ID: ID:Box:0
+        ID: ID:Cone:0
         Persistent-ID: "?"
         Position:
           ID: "?"
@@ -179,9 +179,9 @@ Children:
           ID: "?"
           Data:
             - 0
+            - 58111
             - 0
-            - 0
-            - 111111
+            - 94777.66666666667
         Scale:
           ID: "?"
           Data:
@@ -199,7 +199,7 @@ Children:
           Data:
             - Type: 2
               Data:
-                ID: ID:Box:Components:2:0
+                ID: ID:Cone:Components:2:0
                 persistent-ID: "?"
                 UpdateOrder:
                   ID: "?"
@@ -227,21 +227,29 @@ Children:
                 Profile:
                   ID: "?"
                   Data: Linear
-                Size:
-                  ID: ID:Box:Components:2:Size:0
-                  Data:
-                    - 333.3333333333333
-                    - 333.3333333333333
-                    - 333.3333333333333
+                Height:
+                  ID: ID:Cone:Components:2:Height:0
+                  Data: 333.3333333333333
+                RadiusBase:
+                  ID: ID:Cone:Components:2:RadiusBase:0
+                  Data: 166.66666666666666
+                RadiusTop:
+                  ID: ID:Cone:Components:2:RadiusTop:0
+                  Data: 0
+                Sides:
+                  ID: ID:Cone:Components:2:Sides:0
+                  Data: 10666.666666666666
+                Caps:
+                  ID: ID:Cone:Components:2:Caps:0
+                  Data: true
+                FlatShading:
+                  ID: ID:Cone:Components:2:FlatShading:0
+                  Data: false
                 UVScale:
                   ID: "?"
                   Data:
                     - 333.3333333333333
                     - 333.3333333333333
-                    - 333.3333333333333
-                ScaleUVWithSize:
-                  ID: "?"
-                  Data: false
             - Type: 3
               Data:
                 ID: "?"
@@ -254,12 +262,12 @@ Children:
                   Data: true
                 Mesh:
                   ID: "?"
-                  Data: ID:Box:Components:2:0
+                  Data: ID:Cone:Components:2:0
                 Materials:
                   ID: "?"
                   Data:
                     - ID: "?"
-                      Data: ID:Assets:7:ID:1
+                      Data: ID:Assets:10:ID:3
                 MaterialPropertyBlocks:
                   ID: "?"
                   Data: []
@@ -300,12 +308,12 @@ Children:
                 IgnoreRaycasts:
                   ID: "?"
                   Data: false
-                Size:
-                  ID: ID:Box:Components:4:Size:0
-                  Data:
-                    - 333.3333333333333
-                    - 333.3333333333333
-                    - 333.3333333333333
+                Height:
+                  ID: ID:Cone:Components:4:Height:0
+                  Data: 333.3333333333333
+                Radius:
+                  ID: ID:Cone:Components:4:Radius:0
+                  Data: 166.66666666666666
             - Type: 5
               Data:
                 ID: "?"
@@ -318,10 +326,29 @@ Children:
                   Data: true
                 Source:
                   ID: "?"
-                  Data: ID:Box:Components:2:Size:0
+                  Data: ID:Cone:Components:2:RadiusBase:0
                 Target:
                   ID: "?"
-                  Data: ID:Box:Components:4:Size:0
+                  Data: ID:Cone:Components:4:Radius:0
+                WriteBack:
+                  ID: "?"
+                  Data: false
+            - Type: 5
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                Source:
+                  ID: "?"
+                  Data: ID:Cone:Components:2:Height:0
+                Target:
+                  ID: "?"
+                  Data: ID:Cone:Components:4:Height:0
                 WriteBack:
                   ID: "?"
                   Data: false
@@ -397,7 +424,7 @@ Children:
                   Data: Static.Main
                 Reference:
                   ID: "?"
-                  Data: ID:Box:0
+                  Data: ID:Cone:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -416,7 +443,7 @@ Children:
                   Data: Static.ChildrenParent
                 Reference:
                   ID: "?"
-                  Data: ID:Box:0
+                  Data: ID:Cone:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -470,10 +497,124 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.size
+                  Data: Props.name
                 TargetField:
                   ID: "?"
-                  Data: ID:Box:Components:2:Size:0
+                  Data: "?"
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: 7
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.radiusBase
+                TargetField:
+                  ID: "?"
+                  Data: ID:Cone:Components:2:RadiusBase:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: 7
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.radiusTop
+                TargetField:
+                  ID: "?"
+                  Data: ID:Cone:Components:2:RadiusTop:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: 7
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.height
+                TargetField:
+                  ID: "?"
+                  Data: ID:Cone:Components:2:Height:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: 8
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.sides
+                TargetField:
+                  ID: "?"
+                  Data: ID:Cone:Components:2:Sides:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: 9
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.caps
+                TargetField:
+                  ID: "?"
+                  Data: ID:Cone:Components:2:Caps:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: 9
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.flatShading
+                TargetField:
+                  ID: "?"
+                  Data: ID:Cone:Components:2:FlatShading:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
