@@ -8,9 +8,9 @@ import {
 } from "../../../../../lib/miragex/unit/common";
 
 const detail = {
-  code: "Primitive/Box",
+  code: "Primitive/Triangle",
   propsConfig: {
-    size: UnitProp.Float3([1, 1, 1]),
+    name: UnitProp.String("Empty"),
   },
   children: "multi",
 } as const satisfies DetailBase;

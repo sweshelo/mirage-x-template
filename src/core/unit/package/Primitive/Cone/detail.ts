@@ -8,9 +8,15 @@ import {
 } from "../../../../../lib/miragex/unit/common";
 
 const detail = {
-  code: "Primitive/Box",
+  code: "Primitive/Cone",
   propsConfig: {
-    size: UnitProp.Float3([1, 1, 1]),
+    name: UnitProp.String("Empty"),
+    radiusBase: UnitProp.Float(0.5),
+    radiusTop: UnitProp.Float(0),
+    height: UnitProp.Float(2),
+    sides: UnitProp.Int(32),
+    caps: UnitProp.Boolean(true),
+    flatShading: UnitProp.Boolean(false),
   },
   children: "multi",
 } as const satisfies DetailBase;

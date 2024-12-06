@@ -1,6 +1,6 @@
 Name:
   ID: "?"
-  Data: StyledUix/StyledText
+  Data: Primitive/Quad
 Active:
   ID: "?"
   Data: true
@@ -163,11 +163,11 @@ Children:
     Children:
       - Name:
           ID: "?"
-          Data: StyledText
+          Data: Quad
         Active:
           ID: "?"
           Data: true
-        ID: ID:StyledText:0
+        ID: ID:Quad:0
         Persistent-ID: "?"
         Position:
           ID: "?"
@@ -199,7 +199,7 @@ Children:
           Data:
             - Type: 2
               Data:
-                ID: "?"
+                ID: ID:Quad:Components:2:0
                 persistent-ID: "?"
                 UpdateOrder:
                   ID: "?"
@@ -207,88 +207,89 @@ Children:
                 Enabled:
                   ID: "?"
                   Data: true
-                Font:
-                  ID: ID:StyledText:Components:2:Font:0
-                  Data: ID:Assets:15:ID:0
-                Content:
-                  ID: ID:StyledText:Components:2:Content:0
-                  Data: ""
-                ParseRichText:
+                HighPriorityIntegration:
+                  ID: ID:Quad:Components:2:HighPriorityIntegration:0
+                  Data: false
+                OverrideBoundingBox:
+                  ID: ID:Quad:Components:2:OverrideBoundingBox:0
+                  Data: false
+                OverridenBoundingBox:
+                  ID: ID:Quad:Components:2:OverridenBoundingBox:0
+                  Data:
+                    Min:
+                      - 266.6666666666667
+                      - 0
+                      - 0
+                    Max:
+                      - 0
+                      - 0
+                      - 0
+                Profile:
                   ID: "?"
-                  Data: true
-                NullContent:
-                  ID: ID:StyledText:Components:2:NullContent:0
-                  Data: ""
-                Size:
-                  ID: ID:StyledText:Components:2:Size:0
-                  Data: 21333.333333333332
-                HorizontalAlign:
-                  ID: ID:StyledText:Components:2:HorizontalAlign:0
-                  Data: Left
-                VerticalAlign:
-                  ID: ID:StyledText:Components:2:VerticalAlign:0
-                  Data: Top
-                AlignmentMode:
-                  ID: "?"
-                  Data: Geometric
-                Color:
-                  ID: ID:StyledText:Components:2:Color:0
+                  Data: Linear
+                Rotation:
+                  ID: ID:Quad:Components:2:Rotation:0
                   Data:
                     - 0
                     - 0
                     - 0
                     - 333.3333333333333
-                    - sRGB
-                Materials:
+                Size:
+                  ID: ID:Quad:Components:2:Size:0
+                  Data:
+                    - 333.3333333333333
+                    - 333.3333333333333
+                UVOffset:
                   ID: "?"
                   Data:
-                    - ID: ID:StyledText:Components:2:Materials.0.ID:0
-                      Data: ID:Assets:17:ID:0
-                LineHeight:
-                  ID: ID:StyledText:Components:2:LineHeight:0
-                  Data: 266.6666666666667
-                MaskPattern:
+                    - 0
+                    - 0
+                UVScale:
                   ID: "?"
-                  Data: null
-                HorizontalAutoSize:
-                  ID: ID:StyledText:Components:2:HorizontalAutoSize:0
+                  Data:
+                    - 333.3333333333333
+                    - 333.3333333333333
+                ScaleUVWithSize:
+                  ID: "?"
                   Data: false
-                VerticalAutoSize:
-                  ID: ID:StyledText:Components:2:VerticalAutoSize:0
+                DualSided:
+                  ID: ID:Quad:Components:2:DualSided:0
                   Data: false
-                AutoSizeMin:
-                  ID: ID:StyledText:Components:2:AutoSizeMin:0
-                  Data: 2666.6666666666665
-                AutoSizeMax:
-                  ID: ID:StyledText:Components:2:AutoSizeMax:0
-                  Data: 21333.333333333332
-                CaretPosition:
-                  ID: "?"
-                  Data: -333.3333333333333
-                SelectionStart:
-                  ID: "?"
-                  Data: -333.3333333333333
-                CaretColor:
-                  ID: "?"
-                  Data:
-                    - 0
-                    - 0
-                    - 0
-                    - 0
-                    - sRGBAlpha
-                SelectionColor:
-                  ID: "?"
-                  Data:
-                    - 0
-                    - 0
-                    - 0
-                    - 0
-                    - sRGBAlpha
-                InteractionTarget:
-                  ID: "?"
+                UseVertexColors:
+                  ID: ID:Quad:Components:2:UseVertexColors:0
                   Data: true
-                _legacyFontMaterial-ID: "?"
-                _legacyAlign-ID: "?"
+                UpperLeftColor:
+                  ID: ID:Quad:Components:2:UpperLeftColor:0
+                  Data:
+                    - 333.3333333333333
+                    - 333.3333333333333
+                    - 333.3333333333333
+                    - 333.3333333333333
+                    - sRGB
+                LowerLeftColor:
+                  ID: ID:Quad:Components:2:LowerLeftColor:0
+                  Data:
+                    - 333.3333333333333
+                    - 333.3333333333333
+                    - 333.3333333333333
+                    - 333.3333333333333
+                    - sRGB
+                LowerRightColor:
+                  ID: ID:Quad:Components:2:LowerRightColor:0
+                  Data:
+                    - 333.3333333333333
+                    - 333.3333333333333
+                    - 333.3333333333333
+                    - 333.3333333333333
+                    - sRGB
+                UpperRightColor:
+                  ID: ID:Quad:Components:2:UpperRightColor:0
+                  Data:
+                    - 333.3333333333333
+                    - 333.3333333333333
+                    - 333.3333333333333
+                    - 333.3333333333333
+                    - sRGB
             - Type: 3
               Data:
                 ID: "?"
@@ -299,55 +300,63 @@ Children:
                 Enabled:
                   ID: "?"
                   Data: true
-                AnchorMin:
-                  ID: ID:StyledText:Components:3:AnchorMin:0
-                  Data:
-                    - 0
-                    - 0
-                AnchorMax:
-                  ID: ID:StyledText:Components:3:AnchorMax:0
-                  Data:
-                    - 333.3333333333333
-                    - 333.3333333333333
-                OffsetMin:
-                  ID: ID:StyledText:Components:3:OffsetMin:0
-                  Data:
-                    - 0
-                    - 0
-                OffsetMax:
-                  ID: ID:StyledText:Components:3:OffsetMax:0
-                  Data:
-                    - 0
-                    - 0
-                Pivot:
+                Mesh:
+                  ID: "?"
+                  Data: ID:Quad:Components:2:0
+                Materials:
                   ID: "?"
                   Data:
-                    - 166.66666666666666
-                    - 166.66666666666666
+                    - ID: "?"
+                      Data: ID:Assets:12:ID:5
+                MaterialPropertyBlocks:
+                  ID: "?"
+                  Data: []
+                ShadowCastMode:
+                  ID: "?"
+                  Data: On
+                MotionVectorMode:
+                  ID: "?"
+                  Data: Object
+                SortingOrder:
+                  ID: "?"
+                  Data: 0
             - Type: 4
               Data:
                 ID: "?"
                 persistent-ID: "?"
                 UpdateOrder:
                   ID: "?"
-                  Data: 0
+                  Data: 333333333.3333333
                 Enabled:
                   ID: "?"
                   Data: true
-                VariableName:
-                  ID: ID:StyledText:Components:4:VariableName:0
-                  Data: ""
-                Target:
+                Offset:
                   ID: "?"
-                  Data: ID:StyledText:Components:2:Color:0
-                DefaultValue:
-                  ID: ID:StyledText:Components:4:DefaultValue:0
                   Data:
                     - 0
                     - 0
                     - 0
-                    - 333.3333333333333
-                    - sRGB
+                Type:
+                  ID: "?"
+                  Data: NoCollision
+                Mass:
+                  ID: "?"
+                  Data: 333.3333333333333
+                CharacterCollider:
+                  ID: "?"
+                  Data: false
+                IgnoreRaycasts:
+                  ID: "?"
+                  Data: false
+                Mesh:
+                  ID: "?"
+                  Data: ID:Quad:Components:2:0
+                Sidedness:
+                  ID: "?"
+                  Data: Front
+                ActualSpeculativeMargin:
+                  ID: "?"
+                  Data: null
             - Type: 5
               Data:
                 ID: "?"
@@ -358,34 +367,15 @@ Children:
                 Enabled:
                   ID: "?"
                   Data: true
-                VariableName:
-                  ID: ID:StyledText:Components:5:VariableName:0
-                  Data: ""
-                Target:
+                _worker:
                   ID: "?"
-                  Data: ID:StyledText:Components:2:Materials.0.ID:0
-                DefaultTarget:
+                  Data: ID:Quad:0
+                _gizmo:
                   ID: "?"
-                  Data: ID:Assets:17:ID:0
-            - Type: 6
-              Data:
-                ID: "?"
-                persistent-ID: "?"
-                UpdateOrder:
+                  Data: null
+                _type:
                   ID: "?"
-                  Data: 0
-                Enabled:
-                  ID: "?"
-                  Data: true
-                VariableName:
-                  ID: ID:StyledText:Components:6:VariableName:0
-                  Data: ""
-                Target:
-                  ID: "?"
-                  Data: ID:StyledText:Components:2:Font:0
-                DefaultTarget:
-                  ID: "?"
-                  Data: ID:Assets:15:ID:0
+                  Data: 89000
         Children: []
         ParentReference: ""
       - Name:
@@ -458,7 +448,7 @@ Children:
                   Data: Static.Main
                 Reference:
                   ID: "?"
-                  Data: ID:StyledText:0
+                  Data: ID:Quad:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -477,7 +467,7 @@ Children:
                   Data: Static.ChildrenParent
                 Reference:
                   ID: "?"
-                  Data: ID:StyledText:0
+                  Data: ID:Quad:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -489,7 +479,7 @@ Children:
         Active:
           ID: "?"
           Data: true
-        ID: "?"
+        ID: ID:DV/Props:0
         Persistent-ID: "?"
         Position:
           ID: "?"
@@ -519,7 +509,7 @@ Children:
         Components:
           ID: "?"
           Data:
-            - Type: 7
+            - Type: 6
               Data:
                 ID: "?"
                 persistent-ID: "?"
@@ -531,10 +521,10 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.styledFont
+                  Data: Props.name
                 TargetField:
                   ID: "?"
-                  Data: ID:StyledText:Components:6:VariableName:0
+                  Data: "?"
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -550,10 +540,29 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.content
+                  Data: Props.highPriorityIntegration
                 TargetField:
                   ID: "?"
-                  Data: ID:StyledText:Components:2:Content:0
+                  Data: ID:Quad:Components:2:HighPriorityIntegration:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: 7
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.overrideBoundingBox
+                TargetField:
+                  ID: "?"
+                  Data: ID:Quad:Components:2:OverrideBoundingBox:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -569,29 +578,10 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.size
+                  Data: Props.overridenBoundingBox
                 TargetField:
                   ID: "?"
-                  Data: ID:StyledText:Components:2:Size:0
-                OverrideOnLink:
-                  ID: "?"
-                  Data: false
-            - Type: 7
-              Data:
-                ID: "?"
-                persistent-ID: "?"
-                UpdateOrder:
-                  ID: "?"
-                  Data: 0
-                Enabled:
-                  ID: "?"
-                  Data: true
-                VariableName:
-                  ID: "?"
-                  Data: Props.styledColor
-                TargetField:
-                  ID: "?"
-                  Data: ID:StyledText:Components:4:VariableName:0
+                  Data: ID:Quad:Components:2:OverridenBoundingBox:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -607,67 +597,10 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.defaultColor
+                  Data: Props.rotation
                 TargetField:
                   ID: "?"
-                  Data: ID:StyledText:Components:4:DefaultValue:0
-                OverrideOnLink:
-                  ID: "?"
-                  Data: false
-            - Type: 7
-              Data:
-                ID: "?"
-                persistent-ID: "?"
-                UpdateOrder:
-                  ID: "?"
-                  Data: 0
-                Enabled:
-                  ID: "?"
-                  Data: true
-                VariableName:
-                  ID: "?"
-                  Data: Props.styledMaterial
-                TargetField:
-                  ID: "?"
-                  Data: ID:StyledText:Components:5:VariableName:0
-                OverrideOnLink:
-                  ID: "?"
-                  Data: false
-            - Type: 7
-              Data:
-                ID: "?"
-                persistent-ID: "?"
-                UpdateOrder:
-                  ID: "?"
-                  Data: 0
-                Enabled:
-                  ID: "?"
-                  Data: true
-                VariableName:
-                  ID: "?"
-                  Data: Props.nullContent
-                TargetField:
-                  ID: "?"
-                  Data: ID:StyledText:Components:2:NullContent:0
-                OverrideOnLink:
-                  ID: "?"
-                  Data: false
-            - Type: 8
-              Data:
-                ID: "?"
-                persistent-ID: "?"
-                UpdateOrder:
-                  ID: "?"
-                  Data: 0
-                Enabled:
-                  ID: "?"
-                  Data: true
-                VariableName:
-                  ID: "?"
-                  Data: Props.lineHeight
-                TargetField:
-                  ID: "?"
-                  Data: ID:StyledText:Components:2:LineHeight:0
+                  Data: ID:Quad:Components:2:Rotation:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -683,14 +616,14 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.horizontalAutoSize
+                  Data: Props.size
                 TargetField:
                   ID: "?"
-                  Data: ID:StyledText:Components:2:HorizontalAutoSize:0
+                  Data: ID:Quad:Components:2:Size:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
-            - Type: 10
+            - Type: 7
               Data:
                 ID: "?"
                 persistent-ID: "?"
@@ -702,10 +635,29 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.verticalAutoSize
+                  Data: Props.dualSided
                 TargetField:
                   ID: "?"
-                  Data: ID:StyledText:Components:2:VerticalAutoSize:0
+                  Data: ID:Quad:Components:2:DualSided:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: 7
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.useVertexColors
+                TargetField:
+                  ID: "?"
+                  Data: ID:Quad:Components:2:UseVertexColors:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -721,14 +673,14 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.horizontalAlign
+                  Data: Props.upperLeftColor
                 TargetField:
                   ID: "?"
-                  Data: ID:StyledText:Components:2:HorizontalAlign:0
+                  Data: ID:Quad:Components:2:UpperLeftColor:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
-            - Type: 12
+            - Type: 11
               Data:
                 ID: "?"
                 persistent-ID: "?"
@@ -740,14 +692,14 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.verticalAlign
+                  Data: Props.upperRightColor
                 TargetField:
                   ID: "?"
-                  Data: ID:StyledText:Components:2:VerticalAlign:0
+                  Data: ID:Quad:Components:2:UpperRightColor:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
-            - Type: 8
+            - Type: 11
               Data:
                 ID: "?"
                 persistent-ID: "?"
@@ -759,14 +711,14 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.autoSizeMin
+                  Data: Props.LowerLeftColor
                 TargetField:
                   ID: "?"
-                  Data: ID:StyledText:Components:2:AutoSizeMin:0
+                  Data: ID:Quad:Components:2:LowerLeftColor:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
-            - Type: 8
+            - Type: 11
               Data:
                 ID: "?"
                 persistent-ID: "?"
@@ -778,14 +730,14 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.autoSizeMax
+                  Data: Props.LowerRightColor
                 TargetField:
                   ID: "?"
-                  Data: ID:StyledText:Components:2:AutoSizeMax:0
+                  Data: ID:Quad:Components:2:LowerRightColor:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
-            - Type: 13
+            - Type: 5
               Data:
                 ID: "?"
                 persistent-ID: "?"
@@ -795,72 +747,15 @@ Children:
                 Enabled:
                   ID: "?"
                   Data: true
-                VariableName:
+                _worker:
                   ID: "?"
-                  Data: Props.anchorMin
-                TargetField:
+                  Data: ID:DV/Props:0
+                _gizmo:
                   ID: "?"
-                  Data: ID:StyledText:Components:3:AnchorMin:0
-                OverrideOnLink:
+                  Data: null
+                _type:
                   ID: "?"
-                  Data: false
-            - Type: 13
-              Data:
-                ID: "?"
-                persistent-ID: "?"
-                UpdateOrder:
-                  ID: "?"
-                  Data: 0
-                Enabled:
-                  ID: "?"
-                  Data: true
-                VariableName:
-                  ID: "?"
-                  Data: Props.anchorMax
-                TargetField:
-                  ID: "?"
-                  Data: ID:StyledText:Components:3:AnchorMax:0
-                OverrideOnLink:
-                  ID: "?"
-                  Data: false
-            - Type: 13
-              Data:
-                ID: "?"
-                persistent-ID: "?"
-                UpdateOrder:
-                  ID: "?"
-                  Data: 0
-                Enabled:
-                  ID: "?"
-                  Data: true
-                VariableName:
-                  ID: "?"
-                  Data: Props.offsetMin
-                TargetField:
-                  ID: "?"
-                  Data: ID:StyledText:Components:3:OffsetMin:0
-                OverrideOnLink:
-                  ID: "?"
-                  Data: false
-            - Type: 13
-              Data:
-                ID: "?"
-                persistent-ID: "?"
-                UpdateOrder:
-                  ID: "?"
-                  Data: 0
-                Enabled:
-                  ID: "?"
-                  Data: true
-                VariableName:
-                  ID: "?"
-                  Data: Props.offsetMax
-                TargetField:
-                  ID: "?"
-                  Data: ID:StyledText:Components:3:OffsetMax:0
-                OverrideOnLink:
-                  ID: "?"
-                  Data: false
+                  Data: 89000
         Children: []
         ParentReference: ""
     ParentReference: ""

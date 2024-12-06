@@ -1,6 +1,6 @@
 Name:
   ID: "?"
-  Data: Primitive/Box
+  Data: Primitive/Grid
 Active:
   ID: "?"
   Data: true
@@ -163,11 +163,11 @@ Children:
     Children:
       - Name:
           ID: "?"
-          Data: Box
+          Data: Empty
         Active:
           ID: "?"
           Data: true
-        ID: ID:Box:0
+        ID: ID:Empty:0
         Persistent-ID: "?"
         Position:
           ID: "?"
@@ -199,7 +199,7 @@ Children:
           Data:
             - Type: 2
               Data:
-                ID: ID:Box:Components:2:0
+                ID: ID:Empty:Components:2:0
                 persistent-ID: "?"
                 UpdateOrder:
                   ID: "?"
@@ -227,21 +227,25 @@ Children:
                 Profile:
                   ID: "?"
                   Data: Linear
+                Points:
+                  ID: ID:Empty:Components:2:Points:0
+                  Data:
+                    - 3333.3333333333335
+                    - 3333.3333333333335
                 Size:
-                  ID: ID:Box:Components:2:Size:0
+                  ID: ID:Empty:Components:2:Size:0
                   Data:
                     - 333.3333333333333
                     - 333.3333333333333
-                    - 333.3333333333333
-                UVScale:
-                  ID: "?"
-                  Data:
-                    - 333.3333333333333
-                    - 333.3333333333333
-                    - 333.3333333333333
-                ScaleUVWithSize:
-                  ID: "?"
+                FlatShading:
+                  ID: ID:Empty:Components:2:FlatShading:0
                   Data: false
+                DisplacementMagnitude:
+                  ID: "?"
+                  Data: 333.3333333333333
+                DisplacementTexture:
+                  ID: "?"
+                  Data: null
             - Type: 3
               Data:
                 ID: "?"
@@ -254,12 +258,12 @@ Children:
                   Data: true
                 Mesh:
                   ID: "?"
-                  Data: ID:Box:Components:2:0
+                  Data: ID:Empty:Components:2:0
                 Materials:
                   ID: "?"
                   Data:
                     - ID: "?"
-                      Data: ID:Assets:7:ID:1
+                      Data: ID:Assets:9:ID:0
                 MaterialPropertyBlocks:
                   ID: "?"
                   Data: []
@@ -290,7 +294,7 @@ Children:
                     - 0
                 Type:
                   ID: "?"
-                  Data: Static
+                  Data: NoCollision
                 Mass:
                   ID: "?"
                   Data: 333.3333333333333
@@ -300,31 +304,15 @@ Children:
                 IgnoreRaycasts:
                   ID: "?"
                   Data: false
-                Size:
-                  ID: ID:Box:Components:4:Size:0
-                  Data:
-                    - 333.3333333333333
-                    - 333.3333333333333
-                    - 333.3333333333333
-            - Type: 5
-              Data:
-                ID: "?"
-                persistent-ID: "?"
-                UpdateOrder:
+                Mesh:
                   ID: "?"
-                  Data: 0
-                Enabled:
+                  Data: ID:Empty:Components:2:0
+                Sidedness:
                   ID: "?"
-                  Data: true
-                Source:
+                  Data: Front
+                ActualSpeculativeMargin:
                   ID: "?"
-                  Data: ID:Box:Components:2:Size:0
-                Target:
-                  ID: "?"
-                  Data: ID:Box:Components:4:Size:0
-                WriteBack:
-                  ID: "?"
-                  Data: false
+                  Data: null
         Children: []
         ParentReference: ""
       - Name:
@@ -397,7 +385,7 @@ Children:
                   Data: Static.Main
                 Reference:
                   ID: "?"
-                  Data: ID:Box:0
+                  Data: ID:Empty:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -416,7 +404,7 @@ Children:
                   Data: Static.ChildrenParent
                 Reference:
                   ID: "?"
-                  Data: ID:Box:0
+                  Data: ID:Empty:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -458,7 +446,45 @@ Children:
         Components:
           ID: "?"
           Data:
+            - Type: 5
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.name
+                TargetField:
+                  ID: "?"
+                  Data: "?"
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
             - Type: 6
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.points
+                TargetField:
+                  ID: "?"
+                  Data: ID:Empty:Components:2:Points:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: 7
               Data:
                 ID: "?"
                 persistent-ID: "?"
@@ -473,7 +499,26 @@ Children:
                   Data: Props.size
                 TargetField:
                   ID: "?"
-                  Data: ID:Box:Components:2:Size:0
+                  Data: ID:Empty:Components:2:Size:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: 8
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.flatShading
+                TargetField:
+                  ID: "?"
+                  Data: ID:Empty:Components:2:FlatShading:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false

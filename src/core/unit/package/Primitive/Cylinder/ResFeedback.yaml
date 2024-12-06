@@ -1,6 +1,6 @@
 Name:
   ID: "?"
-  Data: Primitive/Box
+  Data: Primitive/Cylinder
 Active:
   ID: "?"
   Data: true
@@ -163,11 +163,11 @@ Children:
     Children:
       - Name:
           ID: "?"
-          Data: Box
+          Data: Cylinder
         Active:
           ID: "?"
           Data: true
-        ID: ID:Box:0
+        ID: ID:Cylinder:0
         Persistent-ID: "?"
         Position:
           ID: "?"
@@ -199,7 +199,7 @@ Children:
           Data:
             - Type: 2
               Data:
-                ID: ID:Box:Components:2:0
+                ID: ID:Cylinder:Components:2:0
                 persistent-ID: "?"
                 UpdateOrder:
                   ID: "?"
@@ -227,21 +227,26 @@ Children:
                 Profile:
                   ID: "?"
                   Data: Linear
-                Size:
-                  ID: ID:Box:Components:2:Size:0
-                  Data:
-                    - 333.3333333333333
-                    - 333.3333333333333
-                    - 333.3333333333333
+                Height:
+                  ID: ID:Cylinder:Components:2:Height:0
+                  Data: 333.3333333333333
+                Radius:
+                  ID: ID:Cylinder:Components:2:Radius:0
+                  Data: 166.66666666666666
+                Sides:
+                  ID: ID:Cylinder:Components:2:Sides:0
+                  Data: 5333.333333333333
+                Caps:
+                  ID: ID:Cylinder:Components:2:Caps:0
+                  Data: true
+                FlatShading:
+                  ID: ID:Cylinder:Components:2:FlatShading:0
+                  Data: false
                 UVScale:
                   ID: "?"
                   Data:
                     - 333.3333333333333
                     - 333.3333333333333
-                    - 333.3333333333333
-                ScaleUVWithSize:
-                  ID: "?"
-                  Data: false
             - Type: 3
               Data:
                 ID: "?"
@@ -254,12 +259,12 @@ Children:
                   Data: true
                 Mesh:
                   ID: "?"
-                  Data: ID:Box:Components:2:0
+                  Data: ID:Cylinder:Components:2:0
                 Materials:
                   ID: "?"
                   Data:
                     - ID: "?"
-                      Data: ID:Assets:7:ID:1
+                      Data: ID:Assets:10:ID:4
                 MaterialPropertyBlocks:
                   ID: "?"
                   Data: []
@@ -300,12 +305,12 @@ Children:
                 IgnoreRaycasts:
                   ID: "?"
                   Data: false
-                Size:
-                  ID: ID:Box:Components:4:Size:0
-                  Data:
-                    - 333.3333333333333
-                    - 333.3333333333333
-                    - 333.3333333333333
+                Height:
+                  ID: ID:Cylinder:Components:4:Height:0
+                  Data: 333.3333333333333
+                Radius:
+                  ID: ID:Cylinder:Components:4:Radius:0
+                  Data: 166.66666666666666
             - Type: 5
               Data:
                 ID: "?"
@@ -318,10 +323,29 @@ Children:
                   Data: true
                 Source:
                   ID: "?"
-                  Data: ID:Box:Components:2:Size:0
+                  Data: ID:Cylinder:Components:2:Radius:0
                 Target:
                   ID: "?"
-                  Data: ID:Box:Components:4:Size:0
+                  Data: ID:Cylinder:Components:4:Radius:0
+                WriteBack:
+                  ID: "?"
+                  Data: false
+            - Type: 5
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                Source:
+                  ID: "?"
+                  Data: ID:Cylinder:Components:2:Height:0
+                Target:
+                  ID: "?"
+                  Data: ID:Cylinder:Components:4:Height:0
                 WriteBack:
                   ID: "?"
                   Data: false
@@ -397,7 +421,7 @@ Children:
                   Data: Static.Main
                 Reference:
                   ID: "?"
-                  Data: ID:Box:0
+                  Data: ID:Cylinder:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -416,7 +440,7 @@ Children:
                   Data: Static.ChildrenParent
                 Reference:
                   ID: "?"
-                  Data: ID:Box:0
+                  Data: ID:Cylinder:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
@@ -470,10 +494,105 @@ Children:
                   Data: true
                 VariableName:
                   ID: "?"
-                  Data: Props.size
+                  Data: Props.name
                 TargetField:
                   ID: "?"
-                  Data: ID:Box:Components:2:Size:0
+                  Data: "?"
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: 7
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.radius
+                TargetField:
+                  ID: "?"
+                  Data: ID:Cylinder:Components:2:Radius:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: 7
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.height
+                TargetField:
+                  ID: "?"
+                  Data: ID:Cylinder:Components:2:Height:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: 8
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.sides
+                TargetField:
+                  ID: "?"
+                  Data: ID:Cylinder:Components:2:Sides:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: 9
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.caps
+                TargetField:
+                  ID: "?"
+                  Data: ID:Cylinder:Components:2:Caps:0
+                OverrideOnLink:
+                  ID: "?"
+                  Data: false
+            - Type: 9
+              Data:
+                ID: "?"
+                persistent-ID: "?"
+                UpdateOrder:
+                  ID: "?"
+                  Data: 0
+                Enabled:
+                  ID: "?"
+                  Data: true
+                VariableName:
+                  ID: "?"
+                  Data: Props.flatShading
+                TargetField:
+                  ID: "?"
+                  Data: ID:Cylinder:Components:2:FlatShading:0
                 OverrideOnLink:
                   ID: "?"
                   Data: false
